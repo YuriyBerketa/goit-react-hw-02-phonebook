@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import { Contacts, ContactsLi, Span } from './ContactList.styled';
+import { Contacts, ContactsLi, BTN } from './ContactList.styled';
 
 export const ListContact = ({ contacts, onContactDelete }) => (
     <Contacts>
         {contacts.map((e) => 
             <ContactsLi key={e.id}>
-                <Span>{e.name} {e.number}</Span>
-                <button onClick={()=> onContactDelete(e.id)}>Delete</button>
+                <span>{e.name} {e.number}</span>
+                <BTN onClick={()=> onContactDelete(e.id)}>Delete</BTN>
         </ContactsLi>)}
     </Contacts>
 )

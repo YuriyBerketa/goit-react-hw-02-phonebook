@@ -5,6 +5,7 @@ import {Form} from './Form';
 import { nanoid } from 'nanoid';
 import {Filter} from "./Filter";
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import { Div } from "./App.styled";
 
 export class App extends Component {
 
@@ -48,17 +49,7 @@ export class App extends Component {
     const visibleContacts = this.getVisibleContacts();
 
     return (
-      <div
-        style={{
-          height: '100vh',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          fontSize: 40,
-          color: '#010101'
-        }}
-      >
+      <Div>
         <h1>Phonebook</h1>
         <Form onSubmit={this.ContactAdd} />
 
@@ -73,7 +64,7 @@ export class App extends Component {
           onContactDelete={this.deleteContact}
         />
 
-      </div>
+      </Div>
     )
   }
 }

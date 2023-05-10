@@ -1,21 +1,21 @@
 import styled from '@emotion/styled';
 
 export const Contacts = styled.ul`
-margin: 0 auto;
-max-width: 90%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-list-style: none;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 10px;
 `
 
 export const ContactsLi = styled.li`
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: space-between;
 `
 
-export const Span = styled.span`
-margin-right: 20px;
-
+export const BTN = styled.button`
+    background-color: firebrick;
+    border-radius: 5px;
+cursor: pointer;
 `
